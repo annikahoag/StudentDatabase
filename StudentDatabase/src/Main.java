@@ -64,7 +64,7 @@ public class Main {
 						break;
 					
 					//input grade level/major
-					//EXTRA CREDIT: search for full or partial name
+					//EXTRA CREDIT: search for name or partial name
 					case 6: userInput=6;
 						scn = new Scanner(System.in);
 						System.out.println("Would you like to enter a grade level, major, or name?"
