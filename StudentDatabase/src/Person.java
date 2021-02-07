@@ -1,4 +1,4 @@
-/*****************************************
+/******************************************
  *
  * File Name: Person
  * Purpose: person class, equals and print methods

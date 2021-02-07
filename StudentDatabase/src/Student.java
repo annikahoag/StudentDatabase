@@ -1,4 +1,4 @@
-/*****************************************
+/******************************************
  *
  * File Name: Student
  * Purpose: student class inherits from Person 

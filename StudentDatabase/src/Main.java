@@ -1,4 +1,4 @@
-/*****************************************
+/******************************************
  *
  * File Name: Main
  * Purpose: user says what they want to do and calls necessary functions 

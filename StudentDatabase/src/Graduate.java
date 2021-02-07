@@ -1,4 +1,4 @@
-/*****************************************
+/******************************************
  *
  * File Name: Graduate
  * Purpose: graduate student class, inherits from Student 
