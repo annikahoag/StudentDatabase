@@ -202,4 +202,62 @@ public class Database {
 	}
 	
 	
+	//EXTRA CREDIT: remove a person
+	public void removePerson() {
+		String nameEntered;
+		int foundCount=0;
+		int foundIndex=0;
+		String isPerson;
+		
+		System.out.println("Please enter the name of the person you would like to remove.");
+		nameEntered = scn.nextLine();
+		
+		for (int i=0; i<persList.size(); i++) {
+			if (persList.get(i).nameEquals(nameEntered)) {
+				System.out.println();
+				foundCount++;
+				
+				if (foundCount >= 1) {
+					System.out.println(persList.get(foundIndex).print());
+					System.out.println();
+					System.out.println("Is this the person you want to remove? "
+							+ "\nPlease type yes or no in lowercase letters.");
+					isPerson = scn.nextLine();
+						
+					if (isPerson.equals("yes")) {
+						foundCount=1;
+						foundIndex=i;
+						break;
+					}else {
+						foundIndex++;
+						continue;
+					}
+				}
+	
+			}else if (!persList.get(i).nameEquals(nameEntered) && i != persList.size()-1){
+				foundIndex++;
+			}else {
+				foundCount=0;
+			}
+		}
+		
+		//if there's an out of bounds exception that means they said no to all the people with given name
+		try {
+			if (foundCount==0) {
+				System.out.println("Sorry, that person is not in the system.");
+				
+			}else if (foundCount==1) {
+				persList.remove(foundIndex);
+				System.out.println("They have been removed.");
+			}
+	
+		}catch(IndexOutOfBoundsException e) {
+			System.out.println("Sorry, there is no one else by that name in the system");
+		}
+		
+	}
+	
+	
+	
+	
 }//end of class

@@ -28,7 +28,8 @@ public class Main {
 						+ "\n4 if you would like to print all undergraduates."
 						+ "\n5 if you would like to print all graduate students."
 						+ "\n6 if you would like to search for a grade level, major, or name."
-						+ "\n7 if you would like to end the program.");
+						+ "\n7 if you would like to remove a person."
+						+ "\n8 if you would like to end the program.");
 				userInput = scn.nextInt();
 				
 				
@@ -87,9 +88,15 @@ public class Main {
 						
 						runAgain=true;
 						break;
+						
+					//EXTRA CREDIT: remove a person	
+					case 7: userInput=7;
+						data.removePerson();
+						runAgain=true;
+						break;
 					
 					//end program 
-					case 7: userInput=7;
+					case 8: userInput=8;
 						System.out.println("Program is ending.");
 						runAgain=false;
 						break;
