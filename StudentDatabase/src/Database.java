@@ -1,3 +1,10 @@
+/*****************************************
+ *
+ * File Name: Database
+ * Purpose: database class
+ * 
+ ******************************************/
+
 import java.util.ArrayList; 
 import java.util.Scanner;
 
@@ -148,8 +155,8 @@ public class Database {
 			}
 		}
 		
-		
 	}
+	
 	
 	//print all people with specified major 
 	public void printMajor() {

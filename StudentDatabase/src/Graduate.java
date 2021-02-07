@@ -1,3 +1,10 @@
+/*****************************************
+ *
+ * File Name: Graduate
+ * Purpose: graduate student class, inherits from Student 
+ * 
+ ******************************************/
+
 
 public class Graduate extends Student{
 

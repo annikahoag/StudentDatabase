@@ -1,3 +1,11 @@
+/*****************************************
+ *
+ * File Name: Student
+ * Purpose: student class inherits from Person 
+ * 
+ ******************************************/
+
+
 
 public class Student extends Person {
 
